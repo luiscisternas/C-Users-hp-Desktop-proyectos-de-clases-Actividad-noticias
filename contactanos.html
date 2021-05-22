@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.maxlength.css">
+    <script type="text/javascript" src="js/jquery.plugin.js"></script>
+     <script type="text/javascript" src="js/jquery.maxlength.js"></script>
+    
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.css"> 
+    
+    <!-- CSS Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="stylesheet" href="js/main.js">
+
+    <script src="js/main.js">
+    function hacer_click(){
+        alert("Datos enviados")
+    }
+</script>
+
+
+</head>
+<body>
+    <!--
+    <script>
+        $(function()
+        {
+            $("#mi-formulario").validate(
+                {
+                    rules: {
+                        Nombre:{
+                            required:true,
+                            name=true
+                        },
+
+                        email:{
+                            requiered:true,
+                            email:true
+                        },
+
+                        Numero:{
+                            requiered:true,
+                            Numero:true
+                        }
+                        
+                    },
+                    messages: {
+                        nombre:{
+                            required:'ingrese nombre',
+                            nombre:'formato incorrecto'
+                        },
+                        email:{
+                            requiered:'ingrese correo electronico',
+                            email:'formato incorrecto'
+                        },
+                        Numero:{
+                            requiered:'ingrese numero',
+                            minlength: 'largo insuficiente'
+                        },
+                        
+                    }
+                })
+        }
+        );
+    </script>
+-->
+
+    
+
+    <header>
+
+        
+		<nav class="navegacion">
+			<ul class="menu">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="menus.html">Categorias</a>
+					<ul class="submenu">
+						<li><a href="menus.html#nacional">Nacional</a></li>
+						<li><a href="menus.html#international">Internacionales</a></li>
+						<li><a href="menus.html#politico">Politica</a></li>
+                        <li><a href="menus.html#deporte">Deportes</a></li>
+					</ul>
+				</li>
+				<li><a href="contactanos.html">Contacto</a></li>
+
+                
+                
+			</ul>
+		</nav>
+
+        <div class="content">
+
+            
+            <h1 class="logo">Contacto</h1>
+    
+            <div class="contact-wrapper animated bounceInUp">
+                <div class="contact-form">
+                    <h3>Contactanos</h3>
+                    <form action="">
+                        <p>
+                            <label for="name">Nombre <span>(*minimo 5 caracteres)</span></label>
+                            <input id="name" name="name" minlength="5" type="text" placeholder="Nombre Apellido" required>
+                        </p>
+                        <p>
+                            <label for="email">E-Mail <span>(*)</span></label>
+                             <input id="email" type="email" name="email" placeholder="correo@correo.cl" required>
+                        </p>
+                        <p>
+                            <label for="telefono">Telefono <span>(*)</span></label>
+                            <input id="telefono" name="telefono" min="9"  type="number"   placeholder="xxxxxxxxx" required>
+                        </p>
+                        <p>
+                            <label for="rut">Rut <span>(*)</span></label>
+                            <input id="rut"type="text" name="rut" placeholder="xx.xxx.xxx-x"required>
+                        </p>
+                        
+
+
+                        <p class="block">
+                           <label>Comentario</label> 
+                            <textarea name="message" rows="3"></textarea>
+                        </p>
+
+                    
+
+                        <p class="block">
+                            <button id="button">
+                                Enviar
+                            </button><br><br>
+                            <button>
+                                Limpiar
+                            </button>
+                        </p>
+                    </form>
+                </div>
+
+               <!-- <script>
+                    function validacion() {
+                        if (!(/^\d{9}$/.test(valor))
+
+                        ){
+                            alert('[ERROR] El campo debe tener un valor de...');
+                            return false;
+                        }
+                    }
+                </script>
+
+                    <script type="text/javascript">
+                    // Initialize our function when the document is ready for events.
+                    jQuery(document).ready(function(){
+                        // Listen for the input event.
+                        jQuery("#numero").on('input', function (evt) {
+                            // Allow only numbers.
+                            jQuery(this).val(jQuery(this).val().replace(/[^0-9]/g, ''));
+                        });
+                    });
+                    </script>
+                -->
+
+
+
+                
+                <!-- API de mapa-->
+                <div id="map"></div>
+                    
+                    <script src="js/main.js"></script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap">
+                    </script>
+
+                    
+
+                <div class="contact-info">
+                    <h4>Mas informacion</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> calle Baker</li>
+                        <li><i class="fas fa-phone"></i> (111) 111 111 111</li>
+                        <li><i class="fas fa-envelope-open-text"></i> contact@duoc.com</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
+                    <p>Company.com</p>
+                </div>
+
+                
+            </div>
+    
+        </div>
+        
+          
+          
+
+        
+	</header>
+    
+   
+   
+
+    
+
+    
+
+    <!-- Materialize.js -->
+    <script src="js/materialize.js"></script>
+   
+    <!-- JS Main -->
+    <script src="js/main.js"></script>
+
+    <!--pie de pagina-->
+    <footer>
+        Derechos reservados &copy; 2021 <br>
+        Diseñador Luis Cisternas<br>
+        Email l.cisternass@alumnos.duoc.cl <br>
+
+    </footer>
+    <div class="new">
+        <div class="iconos">
+            <ul>
+                <li><a href="https://www.Facebook.com/"><span class="fa fa-facebook"></span></li>
+
+                <li><a href="https://www.instagram.com/"><span class="fa fa-instagram"></span></li>
+            </ul>
+        </div>
+
+        
+    
+</body>
+</html>
